@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+.container {
+  margin: 0 auto;
+}
+
+.carousel {
+  width: 900px;
+  border-radius: 20px;
+  margin: 100px auto;
+  background-color: #087f5b;
+  color: #e6fcf5;
+
+  padding: 2em 3em 2em 7em;
+
+  display: flex;
+  align-items: center;
+  gap: 5em;
+
+  position: relative;
+}
+
+img {
+  border-radius: 20px;
+  height: 200px;
+  transform: scale(1.5);
+  box-shadow: 0 12px 24px rgb(0 0 0 / 25%);
+}
+
+.testimonial-text {
+  line-height: 1.6;
+  margin-bottom: 2em;
+  font-weight: 500;
+}
+.testimonial-author {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.testimonial-author-job {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.btn {
+  border: none;
+  background-color: #fff;
+  color: #087f5b;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  box-shadow: 0 12px 24px rgb(0 0 0 / 25%);
+  font-size: 1.2rem;
+  position: absolute;
+  cursor: pointer;
+}
+.btn-left {
+  left: -25px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.btn-right {
+  right: -25px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.dots {
+  display: flex;
+
+  gap: 1em;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  border: 2px solid #087f5b;
+  border-radius: 50%;
+  box-shadow: 0 6px 12px rgb(0 0 0 / 35%);
+  cursor: pointer;
+}
+
+.active {
+  background-color: #087f5b;
+}
